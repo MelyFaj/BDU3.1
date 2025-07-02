@@ -1,0 +1,27 @@
+?SDLC=system development life cycle? why we chose this particular SDLC?
+3rd week-proposal submission deadline
+1. project design
+2. engineering
+3. implementation
+4. testing
+
+SDLC methodologies
+1. waterfall
+> no back tracking
+>not suitable for real life problem
+
+2. iterative
+>u can start over if u complete
+
+3. spiral
+>flexible and suitable for large projects
+>
+
+4. V-model
+>testing in every stage
+
+5. Big bang model
+> sudden
+
+6. agile
+>deliver versions until client is satisfied
