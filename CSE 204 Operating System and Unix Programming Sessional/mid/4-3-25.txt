@@ -1,0 +1,464 @@
+┌──(kali㉿kali)-[~]
+└─$ expr 6+3        
+6+3
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ expr '6+3'
+6+3
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ expr 6+3# 
+6+3#
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ expr 6+3 #
+6+3
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ expr 6 + 4
+10
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ a=$(expr 4 - 9)
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ a              
+a: command not found
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ expr a    
+a
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ $a
+-5: command not found
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ echo $a
+-5
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ expr 21 + 13
+34
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ expr "21 + 13"
+21 + 13
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ expr 21+13    
+21+13
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ expr 21 \* 13
+273
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ expr 21 \* $1
+expr: syntax error: missing argument after ‘*’
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ expr 21 \* $1 1
+21
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ expr 21 \* $1 2
+42
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ expr 21 * $1 2 
+expr: syntax error: unexpected argument ‘Desktop’
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ expr 21 * $1 13
+expr: syntax error: unexpected argument ‘Desktop’
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ expr 21 \* $1 13
+273
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ expr 21 % $1    
+expr: syntax error: missing argument after ‘%’
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ expr 21 % 13
+8
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ a=$(expr 21 - 13)
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ echo $a     
+8
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ let 21+13       
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ let 21 + 13
+zsh: bad math expression: operand expected at end of string
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ a=$((a+3))       
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ a=$((1+3))
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ a=$((1 + 3))
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ #!/bin/zsh
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ echo a 
+a
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ echo $a
+4
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ a=$((a+3))  
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ echo $a   
+7
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ a=((a+3)) 
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ echo $a  
+(a+3)
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ #we need $ to assign
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ ((b++))
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ echo $b
+1
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ ((b++))
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ echo $b
+2
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ echo $c
+
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ ((c++))
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ echo $c
+1
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ ^[[200~## Example 02
+zsh: bad pattern: ^[[200~##
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ #!/bin/bash
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ # Floating-point arithmetic
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ echo "scale = 5; 123.456789/345.345345" | bc # .35748
+Command 'bc' not found, but can be installed with:
+sudo apt install bc
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ echo 'scale=4; 20+5/2' | bc # 22.5000
+Command 'bc' not found, but can be installed with:
+sudo apt install bc
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ #Bash Shell Script to convert Celsius to Fahrenheit
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ read -p "Enter degree celsius temperature: " celsius
+read: -p: no coprocess
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ fahrenheit='echo "scale=4; $celsius*1.8 + 32" | bc'
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ echo "$celsius degree celsius is equal to $fahrenheit degree fahrenheit"
+ degree celsius is equal to echo "scale=4; $celsius*1.8 + 32" | bc degree fahrenheit
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ #37 degree celsius is equal to 98.6 degree fahrenheit
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ 
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ ls         
+Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
+                                                                                                   
+┌──(kali㉿kali)-[~]
+└─$ cd \Documents
+                                                                                                   
+┌──(kali㉿kali)-[~/Documents]
+└─$ ls
+cart2.txt  cart3  cart.txt  cat3  history.txt
+                                                                                                   
+┌──(kali㉿kali)-[~/Documents]
+└─$ touch 4-3-25
+                                                                                                   
+┌──(kali㉿kali)-[~/Documents]
+└─$ touch 4-3-25.sh
+                                                                                                   
+┌──(kali㉿kali)-[~/Documents]
+└─$ ls
+4-3-25  4-3-25.sh  cart2.txt  cart3  cart.txt  cat3  history.txt
+                                                                                                   
+┌──(kali㉿kali)-[~/Documents]
+└─$ nano 4-3-25.sh
+                                                                                                   
+┌──(kali㉿kali)-[~/Documents]
+└─$ cat 4-3-25   
+                                                                                                   
+┌──(kali㉿kali)-[~/Documents]
+└─$ cat 4-3-25.sh
+## Example 02
+#!/bin/bash
+# Floating-point arithmetic
+echo "scale = 5; 123.456789/345.345345" | bc # .35748
+echo 'scale=4; 20+5/2' | bc # 22.5000
+#Bash Shell Script to convert Celsius to Fahrenheit
+read -p "Enter degree celsius temperature: " celsius
+fahrenheit='echo "scale=4; $celsius*1.8 + 32" | bc'
+echo "$celsius degree celsius is equal to $fahrenheit degree fahrenheit"
+#37 degree celsius is equal to 98.6 degree fahrenheit
+
+                                                                                                   
+┌──(kali㉿kali)-[~/Documents]
+└─$ run 4-3-25.sh                                       
+Command 'run' not found, did you mean:
+  command 'zrun' from deb moreutils
+  command 'crun' from deb crun
+  command 'zun' from deb python3-zunclient
+  command 'runq' from deb exim4-daemon-heavy
+  command 'runq' from deb exim4-daemon-light
+  command 'runc' from deb runc
+  command 'srun' from deb slurm-client
+  command 'run0' from deb systemd
+  command 'rup' from deb rstat-client
+  command 'rdn' from deb spaln
+Try: sudo apt install <deb name>
+                                                                                                   
+┌──(kali㉿kali)-[~/Documents]
+└─$ zsh 4-3-25.sh
+4-3-25.sh:4: command not found: bc
+4-3-25.sh:5: command not found: bc
+4-3-25.sh:read:7: -p: no coprocess
+ degree celsius is equal to echo "scale=4; $celsius*1.8 + 32" | bc degree fahrenheit
+                                                                                                   
+┌──(kali㉿kali)-[~/Documents]
+└─$ sudo apt install bc       
+[sudo] password for kali: 
+Installing:                     
+  bc
+                                                                                                   
+Summary:
+  Upgrading: 0, Installing: 1, Removing: 0, Not Upgrading: 877
+  Download size: 103 kB
+  Space needed: 242 kB / 64.5 GB available
+
+Get:1 http://kali.download/kali kali-rolling/main amd64 bc amd64 1.07.1-4 [103 kB]
+Fetched 103 kB in 1s (77.2 kB/s)
+Selecting previously unselected package bc.
+(Reading database ... 391116 files and directories currently installed.)
+Preparing to unpack .../archives/bc_1.07.1-4_amd64.deb ...
+Unpacking bc (1.07.1-4) ...
+Setting up bc (1.07.1-4) ...
+Processing triggers for kali-menu (2023.4.7) ...
+Processing triggers for doc-base (0.11.2) ...
+Processing 39 changed doc-base files, 1 added doc-base file...
+Processing triggers for man-db (2.12.1-1) ...
+                                                                                                   
+┌──(kali㉿kali)-[~/Documents]
+└─$ zsh 4-3-25.sh      
+.35748
+22.5000
+4-3-25.sh:read:7: -p: no coprocess
+ degree celsius is equal to echo "scale=4; $celsius*1.8 + 32" | bc degree fahrenheit
+                                                                                                   
+┌──(kali㉿kali)-[~/Documents]
+└─$ nano 4-3-25.sh
+                                                                                                   
+┌──(kali㉿kali)-[~/Documents]
+└─$ nano 4-3-25.sh
+                                                                                                   
+┌──(kali㉿kali)-[~/Documents]
+└─$ zsh 4-3-25.sh 
+.35748
+22.5000
+4-3-25.sh:read:7: -p: no coprocess
+ degree farhreheit is equal to echo "scale=4; $f-32/1.8" | bc degree celcius
+                                                                                                   
+┌──(kali㉿kali)-[~/Documents]
+└─$ zsh 4-3-25.sh 4
+.35748
+22.5000
+4-3-25.sh:read:7: -p: no coprocess
+ degree farhreheit is equal to echo "scale=4; $f-32/1.8" | bc degree celcius
+                                                                                                   
+┌──(kali㉿kali)-[~/Documents]
+└─$ zsh 4-3-25.sh  
+4-3-25.sh:read:3: -p: no coprocess
+4-3-25.sh:read:4: -p: no coprocess
+4-3-25.sh:5: parse error near `('
+                                                                                                   
+┌──(kali㉿kali)-[~/Documents]
+└─$ zsh 4-3-25.sh 
+4-3-25.sh:read:3: -p: no coprocess
+4-3-25.sh:read:4: -p: no coprocess
+4-3-25.sh:5: parse error near ` $num1 + $num2 '
+                                                                                                   
+┌──(kali㉿kali)-[~/Documents]
+└─$ cat 4-3-25.sh
+#!/bin/bash
+# Take input from user and calculate sum.
+read -p "Enter first number: " num1
+read -p "Enter second number: " num2
+sum=$ (( $num1 + $num2 ))
+echo "Sum is: $sum"
+                                                                                                   
+┌──(kali㉿kali)-[~/Documents]
+└─$ zsh 4-3-25.sh 
+4-3-25.sh:read:1: -p: no coprocess
+4-3-25.sh:read:2: -p: no coprocess
+4-3-25.sh:3: parse error near ` $num1 + $num2 '
+                                                                                                   
+┌──(kali㉿kali)-[~/Documents]
+└─$ zsh 4-3-25.sh 
+2
+4-3-25.sh:1: not an identifier: Enter first number: 
+                                                                                                   
+┌──(kali㉿kali)-[~/Documents]
+└─$ ./4-3-25.sh
+zsh: permission denied: ./4-3-25.sh
+                                                                                                   
+┌──(kali㉿kali)-[~/Documents]
+└─$ chmod u+x 4-3-25.sh
+                                                                                                   
+┌──(kali㉿kali)-[~/Documents]
+└─$ ./4-3-25.sh        
+a
+./4-3-25.sh: 1: read: Enter first number: : bad variable name
+3
+./4-3-25.sh: 2: read: Enter second number: : bad variable name
+./4-3-25.sh: 3: Syntax error: "(" unexpected
+                                                                                                   
+┌──(kali㉿kali)-[~/Documents]
+└─$ ./4-3-25.sh
+Enter first number: 2
+Enter second number: 3
+./4-3-25.sh: 3: Syntax error: "(" unexpected
+                                                                                                   
+┌──(kali㉿kali)-[~/Documents]
+└─$ ./4-3-25.sh
+Enter first number: 3         
+Enter second number: 3
+Sum is: 6
+                                                                                                   
+┌──(kali㉿kali)-[~/Documents]
+└─$ history
+    1  udo apt update
+    2  sudo apt update
+    3  sudo bettercap -iface eth0
+    4  locate bettercap
+    5  sudo apt install bettercap
+    6  locate bettercap
+    7  sudo bettercap -iface eth0
+    8  sudo bettercap iface eth0
+    9  expr 6+3
+   10  expr '6+3'
+   11  expr 6+3#
+   12  expr 6+3 #
+   13  expr 6 + 4
+   14  a=$(expr 4 - 9)
+   15  a
+   16  expr a
+   17  $a
+   18  echo $a
+   19  expr 21 + 13
+   20  expr "21 + 13"
+   21  expr 21+13
+   22  expr 21 \* 13
+   23  expr 21 \* $1
+   24  expr 21 \* $1 1
+   25  expr 21 \* $1 2
+   26  expr 21 * $1 2
+   27  expr 21 * $1 13
+   28  expr 21 \* $1 13
+   29  expr 21 % $1
+   30  expr 21 % 13
+   31  a=$(expr 21 - 13)
+   32  echo $a
+   33  let 21+13
+   34  let 21 + 13
+   35  a=$((a+3))
+   36  a=$((1+3))
+   37  a=$((1 + 3))
+   38  #!/bin/zsh
+   39  echo a
+   40  echo $a
+   41  a=$((a+3))
+   42  echo $a
+   43  a=((a+3))
+   44  echo $a
+   45  #we need $ to assign
+   46  ((b++))
+   47  echo $b
+   48  ((b++))
+   49  echo $b
+   50  echo $c
+   51  ((c++))
+   52  echo $c
+   53  ^[[200~## Example 02
+   54  #!/bin/bash
+   55  # Floating-point arithmetic
+   56  echo "scale = 5; 123.456789/345.345345" | bc # .35748
+   57  echo 'scale=4; 20+5/2' | bc # 22.5000
+   58  #Bash Shell Script to convert Celsius to Fahrenheit
+   59  read -p "Enter degree celsius temperature: " celsius
+   60  fahrenheit='echo "scale=4; $celsius*1.8 + 32" | bc'
+   61  echo "$celsius degree celsius is equal to $fahrenheit degree fahrenheit"
+   62  #37 degree celsius is equal to 98.6 degree fahrenheit
+   63  ls
+   64  cd \Documents
+   65  ls
+   66  touch 4-3-25
+   67  touch 4-3-25.sh
+   68  ls
+   69  nano 4-3-25.sh
+   70  cat 4-3-25
+   71  cat 4-3-25.sh
+   72  run 4-3-25.sh
+   73  zsh 4-3-25.sh
+   74  sudo apt install bc
+   75  zsh 4-3-25.sh
+   76  nano 4-3-25.sh
+   77  zsh 4-3-25.sh
+   78  zsh 4-3-25.sh 4
+   79  zsh 4-3-25.sh 
+   80  cat 4-3-25.sh
+   81  zsh 4-3-25.sh 
+   82  ./4-3-25.sh
+   83  chmod u+x 4-3-25.sh
+   84  ./4-3-25.sh
+                                                                                                   
+┌──(kali㉿kali)-[~/Documents]
+└─$ 

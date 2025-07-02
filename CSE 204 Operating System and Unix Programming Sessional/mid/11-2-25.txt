@@ -1,0 +1,922 @@
+┌──(kali㉿kali)-[~]
+└─$ ls              
+Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
+                                                                                                                                                                                                                                            
+┌──(kali㉿kali)-[~]
+└─$ cd /Documents
+cd: no such file or directory: /Documents
+                                                                                                                                                                                                                                            
+┌──(kali㉿kali)-[~]
+└─$ pwd
+/home/kali
+                                                                                                                                                                                                                                            
+┌──(kali㉿kali)-[~]
+└─$ cd /home/kali/Documents
+                                                                                                                                                                                                                                            
+┌──(kali㉿kali)-[~/Documents]
+└─$ ls
+                                                                                                                                                                                                                                            
+┌──(kali㉿kali)-[~/Documents]
+└─$ touch cart.txt
+                                                                                                                                                                                                                                            
+┌──(kali㉿kali)-[~/Documents]
+└─$ ls
+cart.txt
+                                                                                                                                                                                                                                            
+┌──(kali㉿kali)-[~/Documents]
+└─$ nano cart.txt
+                                                                                                                                                                                                                                            
+┌──(kali㉿kali)-[~/Documents]
+└─$ cat cart.txt           
+Fruit_name Unit_price Unit Total_price
+Mango $3 5 $15
+Papaya $10 5 $50
+Guava $40 3 $120
+Orange $2 4 $8
+Cherry $9 10 $90
+
+                                                                                                                                                                                                                                            
+┌──(kali㉿kali)-[~/Documents]
+└─$ nano cart.txt
+                                                                                                                                                                                                                                            
+┌──(kali㉿kali)-[~/Documents]
+└─$ cat cart.txt 
+ID Fruit_name Unit_price Unit Total_price
+1 Mango $3 5 $15
+2 Papaya $10 5 $50
+3 Guava $40 3 $120
+4 Orange $2 4 $8
+5 Cherry $9 10 $90
+6 Kiwi $40 1 $40
+7 Avocado $50 1 $50
+8 Lichy $12 10 $120
+9 Fig $30 1 $30
+10 Durian $80 1 $80
+                                                                                                                                                                                                                                            
+┌──(kali㉿kali)-[~/Documents]
+└─$ nano cart.txt
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ cat cart.txt 
+ID Fruit_name Unit_price Unit Total_price
+1 Mango $3 #5 $15
+2 Papaya $10 #5 $50
+3 Guava $40 #3 $120
+4 Orange $2 #4 $8
+5 Cherry $9 #10 $90
+6 Kiwi $40 #1 $40
+7 Avocado $50 #1 $50
+8 Lichy $12 #10 $120
+9 Fig $30 #1 $30
+10 Durian $80 #1 $80
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ cat cart.txt 10
+ID Fruit_name Unit_price Unit Total_price
+1 Mango $3 #5 $15
+2 Papaya $10 #5 $50
+3 Guava $40 #3 $120
+4 Orange $2 #4 $8
+5 Cherry $9 #10 $90
+6 Kiwi $40 #1 $40
+7 Avocado $50 #1 $50
+8 Lichy $12 #10 $120
+9 Fig $30 #1 $30
+10 Durian $80 #1 $80
+cat: 10: No such file or directory
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ head cart.txt
+ID Fruit_name Unit_price Unit Total_price
+1 Mango $3 #5 $15
+2 Papaya $10 #5 $50
+3 Guava $40 #3 $120
+4 Orange $2 #4 $8
+5 Cherry $9 #10 $90
+6 Kiwi $40 #1 $40
+7 Avocado $50 #1 $50
+8 Lichy $12 #10 $120
+9 Fig $30 #1 $30
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ head -5 cart.txt
+ID Fruit_name Unit_price Unit Total_price
+1 Mango $3 #5 $15
+2 Papaya $10 #5 $50
+3 Guava $40 #3 $120
+4 Orange $2 #4 $8
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ tail cart.txt 
+1 Mango $3 #5 $15
+2 Papaya $10 #5 $50
+3 Guava $40 #3 $120
+4 Orange $2 #4 $8
+5 Cherry $9 #10 $90
+6 Kiwi $40 #1 $40
+7 Avocado $50 #1 $50
+8 Lichy $12 #10 $120
+9 Fig $30 #1 $30
+10 Durian $80 #1 $80
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ tail -5 cart.txt
+6 Kiwi $40 #1 $40
+7 Avocado $50 #1 $50
+8 Lichy $12 #10 $120
+9 Fig $30 #1 $30
+10 Durian $80 #1 $80
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ echo 'zoom in ctrl shift +'
+zoom in ctrl shift +
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ echo 'zoom out ctrl -'     
+zoom out ctrl -
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ nl cart.txt  
+     1  ID Fruit_name Unit_price Unit Total_price
+     2  1 Mango $3 #5 $15
+     3  2 Papaya $10 #5 $50
+     4  3 Guava $40 #3 $120
+     5  4 Orange $2 #4 $8
+     6  5 Cherry $9 #10 $90
+     7  6 Kiwi $40 #1 $40
+     8  7 Avocado $50 #1 $50
+     9  8 Lichy $12 #10 $120
+    10  9 Fig $30 #1 $30
+    11  10 Durian $80 #1 $80
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ sort cart.txt            
+10 Durian $80 #1 $80
+1 Mango $3 #5 $15
+2 Papaya $10 #5 $50
+3 Guava $40 #3 $120
+4 Orange $2 #4 $8
+5 Cherry $9 #10 $90
+6 Kiwi $40 #1 $40
+7 Avocado $50 #1 $50
+8 Lichy $12 #10 $120
+9 Fig $30 #1 $30
+ID Fruit_name Unit_price Unit Total_price
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ sort -r cart.txt
+ID Fruit_name Unit_price Unit Total_price
+9 Fig $30 #1 $30
+8 Lichy $12 #10 $120
+7 Avocado $50 #1 $50
+6 Kiwi $40 #1 $40
+5 Cherry $9 #10 $90
+4 Orange $2 #4 $8
+3 Guava $40 #3 $120
+2 Papaya $10 #5 $50
+1 Mango $3 #5 $15
+10 Durian $80 #1 $80
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ nano cart.txt             
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ sort -r cart.txt
+Papaya $10 #5 $50
+Orange $2 #4 $8
+Mango $3 #5 $15
+Lichy $12 #10 $120
+Kiwi $40 #1 $40
+Guava $40 #3 $120
+Fruit_name Unit_price Unit Total_price
+Fig $30 #1 $30
+Durian $80 #1 $80
+Cherry $9 #10 $90
+Avocado $50 #1 $50
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ #sorted
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ /sorted
+zsh: no such file or directory: /sorted
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ /documents
+zsh: no such file or directory: /documents
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ /Documents
+zsh: no such file or directory: /Documents
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ cd ..                  
+                                                                                      
+┌──(kali㉿kali)-[~]
+└─$ /Documents
+zsh: no such file or directory: /Documents
+                                                                                      
+┌──(kali㉿kali)-[~]
+└─$ cd /home/kali/Documents  
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ wc cart.txt
+ 11  44 212 cart.txt
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ cut -f 1 -d ' ' cart.txt
+Fruit_name
+Mango
+Papaya
+Guava
+Orange
+Cherry
+Kiwi
+Avocado
+Lichy
+Fig
+Durian
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ cut -f21 -d ' ' cart.txt
+
+
+
+
+
+
+
+
+
+
+
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ cut -f 2 -d ' ' cart.txt
+Unit_price
+$3
+$10
+$40
+$2
+$9
+$40
+$50
+$12
+$30
+$80
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ cut -f 3 -d ' ' cart.txt
+Unit
+#5
+#5
+#3
+#4
+#10
+#1
+#1
+#10
+#1
+#1
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ cut -f 4 -d ' ' cart.txt
+Total_price
+$15
+$50
+$120
+$8
+$90
+$40
+$50
+$120
+$30
+$80
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ cut -f 5 -d ' ' cart.txt
+
+
+
+
+
+
+
+
+
+
+
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ cut -f 1 -d '#' cart.txt
+Fruit_name Unit_price Unit Total_price
+Mango $3 
+Papaya $10 
+Guava $40 
+Orange $2 
+Cherry $9 
+Kiwi $40 
+Avocado $50 
+Lichy $12 
+Fig $30 
+Durian $80 
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ cut -f 1,2 -d ' ' cart.txt
+Fruit_name Unit_price
+Mango $3
+Papaya $10
+Guava $40
+Orange $2
+Cherry $9
+Kiwi $40
+Avocado $50
+Lichy $12
+Fig $30
+Durian $80
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ sed s/Mango/Jackfruit/g cart.txt
+Fruit_name Unit_price Unit Total_price
+Jackfruit $3 #5 $15
+Papaya $10 #5 $50
+Guava $40 #3 $120
+Orange $2 #4 $8
+Cherry $9 #10 $90
+Kiwi $40 #1 $40
+Avocado $50 #1 $50
+Lichy $12 #10 $120
+Fig $30 #1 $30
+Durian $80 #1 $80
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ sed s/o/k/g cart.txt
+Fruit_name Unit_price Unit Tktal_price
+Mangk $3 #5 $15
+Papaya $10 #5 $50
+Guava $40 #3 $120
+Orange $2 #4 $8
+Cherry $9 #10 $90
+Kiwi $40 #1 $40
+Avkcadk $50 #1 $50
+Lichy $12 #10 $120
+Fig $30 #1 $30
+Durian $80 #1 $80
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ sed s/k/o/g cart.txt
+Fruit_name Unit_price Unit Total_price
+Mango $3 #5 $15
+Papaya $10 #5 $50
+Guava $40 #3 $120
+Orange $2 #4 $8
+Cherry $9 #10 $90
+Kiwi $40 #1 $40
+Avocado $50 #1 $50
+Lichy $12 #10 $120
+Fig $30 #1 $30
+Durian $80 #1 $80
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ sed s/a/h cart.txt
+sed: -e expression #1, char 5: unterminated `s' command
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ sed s/a/h/ cart.txt
+Fruit_nhme Unit_price Unit Total_price
+Mhngo $3 #5 $15
+Phpaya $10 #5 $50
+Guhva $40 #3 $120
+Orhnge $2 #4 $8
+Cherry $9 #10 $90
+Kiwi $40 #1 $40
+Avochdo $50 #1 $50
+Lichy $12 #10 $120
+Fig $30 #1 $30
+Durihn $80 #1 $80
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ sed s/h/a/ cart.txt
+Fruit_name Unit_price Unit Total_price
+Mango $3 #5 $15
+Papaya $10 #5 $50
+Guava $40 #3 $120
+Orange $2 #4 $8
+Caerry $9 #10 $90
+Kiwi $40 #1 $40
+Avocado $50 #1 $50
+Licay $12 #10 $120
+Fig $30 #1 $30
+Durian $80 #1 $80
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ sed /h/a/ cart.txt 
+Fruit_name Unit_price Unit Total_price
+Mango $3 #5 $15
+Papaya $10 #5 $50
+Guava $40 #3 $120
+Orange $2 #4 $8
+Cherry $9 #10 $90
+/
+Kiwi $40 #1 $40
+Avocado $50 #1 $50
+Lichy $12 #10 $120
+/
+Fig $30 #1 $30
+Durian $80 #1 $80
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ nano cart.txt      
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ sed /$/tk/ cart.txt
+sed: can't find label for jump to `k/'
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ sed s/$/tk/ cart.txt
+Fruit_name Unit_price Unit Total_pricetk
+Mango $3 #5 $15tk
+Papaya $10 #5 $50tk
+Guava $40 #3 $120tk
+Orange $2 #4 $8tk
+Cherry $9 #10 $90tk
+Kiwi $40 #1 $40tk
+Avocado $50 #1 $50tk
+Lichy $12 #10 $120tk
+Fig $30 #1 $30tk
+Durian $80 #1 $80tk
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ sed s/$/tk/g cart.txt
+Fruit_name Unit_price Unit Total_pricetk
+Mango $3 #5 $15tk
+Papaya $10 #5 $50tk
+Guava $40 #3 $120tk
+Orange $2 #4 $8tk
+Cherry $9 #10 $90tk
+Kiwi $40 #1 $40tk
+Avocado $50 #1 $50tk
+Lichy $12 #10 $120tk
+Fig $30 #1 $30tk
+Durian $80 #1 $80tk
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ sed s/'$'/'tk'/g cart.txt
+Fruit_name Unit_price Unit Total_pricetk
+Mango $3 #5 $15tk
+Papaya $10 #5 $50tk
+Guava $40 #3 $120tk
+Orange $2 #4 $8tk
+Cherry $9 #10 $90tk
+Kiwi $40 #1 $40tk
+Avocado $50 #1 $50tk
+Lichy $12 #10 $120tk
+Fig $30 #1 $30tk
+Durian $80 #1 $80tk
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ sed /'$'/'tk'/g cart.txt 
+sed: can't find label for jump to `k/g'
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ sed '$'/'tk'/g cart.txt 
+sed: -e expression #1, char 2: unknown command: `/'
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ sed s/'$'/'tk'/g cart.txt
+Fruit_name Unit_price Unit Total_pricetk
+Mango $3 #5 $15tk
+Papaya $10 #5 $50tk
+Guava $40 #3 $120tk
+Orange $2 #4 $8tk
+Cherry $9 #10 $90tk
+Kiwi $40 #1 $40tk
+Avocado $50 #1 $50tk
+Lichy $12 #10 $120tk
+Fig $30 #1 $30tk
+Durian $80 #1 $80tk
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ sed s/'\$'/'tk'/g cart.txt
+Fruit_name Unit_price Unit Total_price
+Mango tk3 #5 tk15
+Papaya tk10 #5 tk50
+Guava tk40 #3 tk120
+Orange tk2 #4 tk8
+Cherry tk9 #10 tk90
+Kiwi tk40 #1 tk40
+Avocado tk50 #1 tk50
+Lichy tk12 #10 tk120
+Fig tk30 #1 tk30
+Durian tk80 #1 tk80
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ grep 'Kiwi' cart.txt
+Kiwi $40 #1 $40
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ grep 'kiwi' cart.txt
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ grep -n 'Kiwi' cart.txt
+7:Kiwi $40 #1 $40
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ grep -n 'kiwi' cart.txt
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ egrep -n 'kiwi' cart.txt
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ egrep -n 'Kiwi' cart.txt
+7:Kiwi $40 #1 $40
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ egrep [aeiou]{2,}  cart.txt
+grep: [aeiou]: No such file or directory
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ egrep '[aeiou]{2,}'  cart.txt
+Fruit_name Unit_price Unit Total_price
+Guava $40 #3 $120
+Durian $80 #1 $80
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ egrep '[aeiou]'  cart.txt 
+Fruit_name Unit_price Unit Total_price
+Mango $3 #5 $15
+Papaya $10 #5 $50
+Guava $40 #3 $120
+Orange $2 #4 $8
+Cherry $9 #10 $90
+Kiwi $40 #1 $40
+Avocado $50 #1 $50
+Lichy $12 #10 $120
+Fig $30 #1 $30
+Durian $80 #1 $80
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ egrep '*y'  cart.txt
+grep: warning: * at start of expression
+Papaya $10 #5 $50
+Cherry $9 #10 $90
+Lichy $12 #10 $120
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ egrep '*y.'  cart.txt
+grep: warning: * at start of expression
+Papaya $10 #5 $50
+Cherry $9 #10 $90
+Lichy $12 #10 $120
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ egrep '*y?'  cart.txt
+grep: warning: * at start of expression
+Fruit_name Unit_price Unit Total_price
+Mango $3 #5 $15
+Papaya $10 #5 $50
+Guava $40 #3 $120
+Orange $2 #4 $8
+Cherry $9 #10 $90
+Kiwi $40 #1 $40
+Avocado $50 #1 $50
+Lichy $12 #10 $120
+Fig $30 #1 $30
+Durian $80 #1 $80
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ egrep '*y'  cart.txt 
+grep: warning: * at start of expression
+Papaya $10 #5 $50
+Cherry $9 #10 $90
+Lichy $12 #10 $120
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ egrep '*y{1}'  cart.txt
+grep: warning: * at start of expression
+Papaya $10 #5 $50
+Cherry $9 #10 $90
+Lichy $12 #10 $120
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ egrep '*y{0}'  cart.txt
+grep: warning: * at start of expression
+Fruit_name Unit_price Unit Total_price
+Mango $3 #5 $15
+Papaya $10 #5 $50
+Guava $40 #3 $120
+Orange $2 #4 $8
+Cherry $9 #10 $90
+Kiwi $40 #1 $40
+Avocado $50 #1 $50
+Lichy $12 #10 $120
+Fig $30 #1 $30
+Durian $80 #1 $80
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ egrep '*y'  cart.txt 
+grep: warning: * at start of expression
+Papaya $10 #5 $50
+Cherry $9 #10 $90
+Lichy $12 #10 $120
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ egrep '*y-'  cart.txt
+grep: warning: * at start of expression
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ egrep help           
+*
+^Z
+zsh: suspended  egrep --color=auto help
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ 
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ egrep '*y'  cart.txt 
+grep: warning: * at start of expression
+Papaya $10 #5 $50
+Cherry $9 #10 $90
+Lichy $12 #10 $120
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ egrep *y  cart.txt 
+grep: warning: * at start of expression
+Papaya $10 #5 $50
+Cherry $9 #10 $90
+Lichy $12 #10 $120
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ egrep *y*  cart.txt
+grep: warning: * at start of expression
+Fruit_name Unit_price Unit Total_price
+Mango $3 #5 $15
+Papaya $10 #5 $50
+Guava $40 #3 $120
+Orange $2 #4 $8
+Cherry $9 #10 $90
+Kiwi $40 #1 $40
+Avocado $50 #1 $50
+Lichy $12 #10 $120
+Fig $30 #1 $30
+Durian $80 #1 $80
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ egrep *.y  cart.txt
+grep: warning: * at start of expression
+Papaya $10 #5 $50
+Cherry $9 #10 $90
+Lichy $12 #10 $120
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ egrep *?y  cart.txt
+grep: warning: * at start of expression
+grep: warning: ? at start of expression
+Papaya $10 #5 $50
+Cherry $9 #10 $90
+Lichy $12 #10 $120
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ egrep *$y  cart.txt
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ egrep *y$  cart.txt
+grep: warning: * at start of expression
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ egrep '*y$'  cart.txt
+grep: warning: * at start of expression
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ egrep '*y'  cart.txt 
+grep: warning: * at start of expression
+Papaya $10 #5 $50
+Cherry $9 #10 $90
+Lichy $12 #10 $120
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ egrep '*y'$  cart.txt
+grep: warning: * at start of expression
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ egrep '$y'  cart.txt 
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ egrep 'y$'  cart.txt 
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ egrep '.y$'  cart.txt
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ egrep '*y'  cart.txt
+grep: warning: * at start of expression
+Papaya $10 #5 $50
+Cherry $9 #10 $90
+Lichy $12 #10 $120
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ egrep 'y$'  cart.txt
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ egrep 'y$' d- ' '  cart.txt
+grep: d-: No such file or directory
+grep:  : No such file or directory
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ egrep d- ' ' 'y$'  cart.txt
+grep:  : No such file or directory
+grep: y$: No such file or directory
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ egrep 'y$'  cart.txt  
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ egrep 'y[' ']'  cart.txt
+grep: Invalid regular expression
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ egrep y[' ']  cart.txt  
+Cherry $9 #10 $90
+Lichy $12 #10 $120
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ echo success          
+success
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ ls
+cart.txt
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ egrep y[' ']  cart.txt > cart2.txt
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ cat cart2.txt             
+Cherry $9 #10 $90
+Lichy $12 #10 $120
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ ls
+cart2.txt  cart.txt
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ sed s/'\$'/'tk'/g cart.txt > cat3
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ ls
+cart2.txt  cart.txt  cat3
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ nano cart3   
+
+
+Use "fg" to return to nano.
+zsh: suspended (signal)  nano cart3
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ cat cat3     
+Fruit_name Unit_price Unit Total_price
+Mango tk3 #5 tk15
+Papaya tk10 #5 tk50
+Guava tk40 #3 tk120
+Orange tk2 #4 tk8
+Cherry tk9 #10 tk90
+Kiwi tk40 #1 tk40
+Avocado tk50 #1 tk50
+Lichy tk12 #10 tk120
+Fig tk30 #1 tk30
+Durian tk80 #1 tk80
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ history > history.txt
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ ls
+cart2.txt  cart3  cart.txt  cat3  history.txt
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ cat history.txt
+    1  udo apt update
+    2  sudo apt update
+    3  sudo bettercap -iface eth0
+    4  locate bettercap
+    5  sudo apt install bettercap
+    6  locate bettercap
+    7  sudo bettercap -iface eth0
+    8  sudo bettercap iface eth0
+    9  ls
+   10  cd /Documents
+   11  pwd
+   12  cd /home/kali/Documents
+   13  ls
+   14  touch cart.txt
+   15  ls
+   16  nano cart.txt
+   17  cat cart.txt
+   18  nano cart.txt
+   19  cat cart.txt
+   20  nano cart.txt
+   21  cat cart.txt
+   22  cat cart.txt 10
+   23  head cart.txt
+   24  head -5 cart.txt
+   25  tail cart.txt
+   26  tail -5 cart.txt
+   27  echo 'zoom in ctrl shift +'
+   28  echo 'zoom out ctrl -'
+   29  nl cart.txt
+   30  sort cart.txt
+   31  sort -r cart.txt
+   32  nano cart.txt
+   33  sort -r cart.txt
+   34  #sorted
+   35  /sorted
+   36  /documents
+   37  /Documents
+   38  cd ..
+   39  /Documents
+   40  cd /home/kali/Documents
+   41  wc cart.txt
+   42  cut -f 1 -d ' ' cart.txt
+   43  cut -f21 -d ' ' cart.txt
+   44  cut -f 2 -d ' ' cart.txt
+   45  cut -f 3 -d ' ' cart.txt
+   46  cut -f 4 -d ' ' cart.txt
+   47  cut -f 5 -d ' ' cart.txt
+   48  cut -f 1 -d '#' cart.txt
+   49  cut -f 1,2 -d ' ' cart.txt
+   50  sed s/Mango/Jackfruit/g cart.txt
+   51  sed s/o/k/g cart.txt
+   52  sed s/k/o/g cart.txt
+   53  sed s/a/h cart.txt
+   54  sed s/a/h/ cart.txt
+   55  sed s/h/a/ cart.txt
+   56  sed /h/a/ cart.txt
+   57  nano cart.txt
+   58  sed /$/tk/ cart.txt
+   59  sed s/$/tk/ cart.txt
+   60  sed s/$/tk/g cart.txt
+   61  sed s/'$'/'tk'/g cart.txt
+   62  sed /'$'/'tk'/g cart.txt
+   63  sed '$'/'tk'/g cart.txt
+   64  sed s/'$'/'tk'/g cart.txt
+   65  sed s/'\$'/'tk'/g cart.txt
+   66  grep 'Kiwi' cart.txt
+   67  grep 'kiwi' cart.txt
+   68  grep -n 'Kiwi' cart.txt
+   69  grep -n 'kiwi' cart.txt
+   70  egrep -n 'kiwi' cart.txt
+   71  egrep -n 'Kiwi' cart.txt
+   72  egrep [aeiou]{2,}  cart.txt
+   73  egrep '[aeiou]{2,}'  cart.txt
+   74  egrep '[aeiou]'  cart.txt
+   75  egrep '*y'  cart.txt
+   76  egrep '*y.'  cart.txt
+   77  egrep '*y?'  cart.txt
+   78  egrep '*y'  cart.txt
+   79  egrep '*y{1}'  cart.txt
+   80  egrep '*y{0}'  cart.txt
+   81  egrep '*y'  cart.txt
+   82  egrep '*y-'  cart.txt
+   83  egrep help
+   84  egrep '*y'  cart.txt
+   85  egrep *y  cart.txt
+   86  egrep *y*  cart.txt
+   87  egrep *.y  cart.txt
+   88  egrep *?y  cart.txt
+   89  egrep *$y  cart.txt
+   90  egrep *y$  cart.txt
+   91  egrep '*y$'  cart.txt
+   92  egrep '*y'  cart.txt
+   93  egrep '*y'$  cart.txt
+   94  egrep '$y'  cart.txt
+   95  egrep 'y$'  cart.txt
+   96  egrep '.y$'  cart.txt
+   97  egrep '*y'  cart.txt
+   98  egrep 'y$'  cart.txt
+   99  egrep 'y$' d- ' '  cart.txt
+  100  egrep d- ' ' 'y$'  cart.txt
+  101  egrep 'y$'  cart.txt
+  102  egrep 'y[' ']'  cart.txt
+  103  egrep y[' ']  cart.txt
+  104  echo success
+  105  ls
+  106  egrep y[' ']  cart.txt > cart2.txt
+  107  cat cart2.txt
+  108  ls
+  109  sed s/'\$'/'tk'/g cart.txt > cat3
+  110  ls
+  111  nano cart3
+  112  cat cat3
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ grep sudo history.txt  
+    2  sudo apt update
+    3  sudo bettercap -iface eth0
+    5  sudo apt install bettercap
+    7  sudo bettercap -iface eth0
+    8  sudo bettercap iface eth0
+                                                                                      
+┌──(kali㉿kali)-[~/Documents]
+└─$ 

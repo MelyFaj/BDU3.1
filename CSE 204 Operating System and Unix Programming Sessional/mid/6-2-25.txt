@@ -1,0 +1,640 @@
+﻿┌──(L570102㉿CSLAB)-[~]
+└─$ eco $shell
+Command 'eco' not found, did you mean:
+  command 'co' from deb rcs
+  command 'ecm' from deb gmp-ecm
+  command 'ecl' from deb ecl
+  command 'peco' from deb peco
+  command 'tco' from deb flang
+  command 'ico' from deb x11-apps
+  command 'ecj' from deb ecj
+  command 'echo' from deb coreutils
+Try: apt install <deb name>
+
+
+┌──(L570102㉿CSLAB)-[~]
+└─$ echo $shell
+
+
+
+
+┌──(L570102㉿CSLAB)-[~]
+└─$ echo $shell
+
+
+
+
+┌──(L570102㉿CSLAB)-[~]
+└─$ echo
+
+
+
+
+┌──(L570102㉿CSLAB)-[~]
+└─$ echo help
+help
+
+
+┌──(L570102㉿CSLAB)-[~]
+└─$ echo $SHELL
+/bin/bash
+
+
+┌──(L570102㉿CSLAB)-[~]
+└─$ pwd
+/home/L570102
+
+
+┌──(L570102㉿CSLAB)-[~]
+└─$ cd..
+cd..: command not found
+                                                                                                                                                                                                   
+┌──(L570102㉿CSLAB)-[~]                                                                                                                                                                            
+└─$ cd ..                                                                                                                                                                                          
+                                                                                                                                                                                                   
+┌──(L570102㉿CSLAB)-[/home]                                                                                                                                                                        
+└─$ pwd                                                                                                                                                                                            
+/home                                                                                                                                                                                              
+                                                                                                                                                                                                   
+┌──(L570102㉿CSLAB)-[/home]                                                                                                                                                                        
+└─$ cd ..                                                                                                                                                                                          
+
+
+┌──(L570102㉿CSLAB)-[/]
+└─$ pwd                                                                                                                                                                                            
+/
+
+
+┌──(L570102㉿CSLAB)-[/]
+└─$ cd ..                                                                                                                                                                                          
+
+
+┌──(L570102㉿CSLAB)-[/]
+└─$ pwd                                                                                                                                                                                            
+/
+
+
+┌──(L570102㉿CSLAB)-[/]
+└─$ cd /home                                                                                                                                                                                       
+
+
+┌──(L570102㉿CSLAB)-[/home]
+└─$ cd /L507102
+bash: cd: /L507102: No such file or directory
+
+
+┌──(L570102㉿CSLAB)-[/home]
+└─$ cd /downloads                                                                                                                                                                                  
+bash: cd: /downloads: No such file or directory
+
+
+┌──(L570102㉿CSLAB)-[/home]
+└─$ cd /download                                                                                                                                                                                   
+bash: cd: /download: No such file or directory
+
+
+┌──(L570102㉿CSLAB)-[/home]
+└─$ ls                                                                                                                                                                                             
+L570102  bduadmin  support
+
+
+┌──(L570102㉿CSLAB)-[/home]
+└─$ cd ..                                                                                                                                                                                          
+
+
+┌──(L570102㉿CSLAB)-[/]
+└─$ ls                                                                                                                                                                                             
+bin  boot  dev  etc  home  initrd.img  initrd.img.old  lib  lib32  lib64  lost+found  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var  vmlinuz  vmlinuz.old
+
+
+┌──(L570102㉿CSLAB)-[/]
+└─$ cd /home                                                                                                                                                                               
+
+
+┌──(L570102㉿CSLAB)-[/home]
+└─$ ls                                                                                                                                                                                             
+L570102  bduadmin  support
+
+
+┌──(L570102㉿CSLAB)-[/home]
+└─$ cd /L570102/                                                                                                                                                                       
+bash: cd: /L570102/: No such file or directory
+
+
+┌──(L570102㉿CSLAB)-[/home]
+└─$ cd /L570102                                                                                                                                                                                    
+bash: cd: /L570102: No such file or directory
+
+
+┌──(L570102㉿CSLAB)-[/home]
+└─$ cd home/L570102                                                                                                                                                                                
+bash: cd: home/L570102: No such file or directory
+
+
+┌──(L570102㉿CSLAB)-[/home]
+└─$ cd home/L570102/                                                                                                                                                                               
+bash: cd: home/L570102/: No such file or directory
+
+
+┌──(L570102㉿CSLAB)-[/home]
+└─$ cd /home/L570102                                                                                                                                                                               
+
+
+┌──(L570102㉿CSLAB)-[~]
+└─$ pwd                                                                                                                                                                                            
+/home/L570102
+
+
+┌──(L570102㉿CSLAB)-[~]
+└─$ ls                                                                                                                                                                                             
+Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos  bdu  thinclient_drives
+
+
+┌──(L570102㉿CSLAB)-[~]
+└─$ cd /Downloads                                                                                                                                                                                  
+bash: cd: /Downloads: No such file or directory
+
+
+┌──(L570102㉿CSLAB)-[~]
+└─$ cd /home/L570102/Downloads
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ pwd
+/home/L570102/Downloads
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ ls                                                                                                                                                                                             
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ touch m.txt                                                                                                                                                                                    
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ ls                                                                                                                                                                                             
+m.txt
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ cat m.txt                                                                                                                                                                                      
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ ^C                                                                                                                                                                                             
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ ^C                                                                                                                                                                                             
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ ^C                                                                                                                                                                                             
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ cd /home/L570102/Downloads/m.txt                                                                                                                                                        
+bash: cd: /home/L570102/Downloads/m.txt: Not a directory
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ vi m.txt
+
+
+[1]+  Stopped                 vi m.txt
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ cat m.tx                                                                                                                                                                                       
+cat: m.tx: No such file or directory
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ cat m.txt                                                                                                                                                                                      
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ cd ..                                                                                                                                                                                          
+
+
+┌──(L570102㉿CSLAB)-[~]
+└─$ pwd                                                                                                                                                                                            
+/home/L570102
+
+
+┌──(L570102㉿CSLAB)-[~]
+└─$ ls                                                                                                                                                                                             
+Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos  bdu  thinclient_drives
+
+
+┌──(L570102㉿CSLAB)-[~]
+└─$ cd /home/L570102/Documents                                                                                                                                                                     
+
+
+┌──(L570102㉿CSLAB)-[~/Documents]
+└─$ ls
+
+
+┌──(L570102㉿CSLAB)-[~/Documents]
+└─$ mkdir                                                                                                                                                                                          
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+
+
+┌──(L570102㉿CSLAB)-[~/Documents]
+└─$ mkdir MehrinFarzana                                                                                                                                                                            
+
+
+┌──(L570102㉿CSLAB)-[~/Documents]
+└─$ cd /home/L570102/Documents/MehrinFarzana
+
+
+┌──(L570102㉿CSLAB)-[~/Documents/MehrinFarzana]
+└─$ ls
+
+
+┌──(L570102㉿CSLAB)-[~/Documents/MehrinFarzana]
+└─$ touch 2101013.txt                                                                                                                                                                              
+
+
+┌──(L570102㉿CSLAB)-[~/Documents/MehrinFarzana]
+└─$ cd /home/L570102/Downloads              
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ touch iobash.sh
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ ls                                                                                                                                                                                             
+iobash.sh  m.txt
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ cat iobash.sh                                                                                                                                                                                  
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ cat iobash.sh                                                                                                                                                                                  
+echo "Salam"
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ iobash.sh                                                                                                                                                                                      
+iobash.sh: command not found
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ run iobash.sh                                                                                                                                                                                  
+Command 'run' not found, did you mean:
+  command 'runc' from deb runc
+  command 'run0' from deb systemd
+  command 'rdn' from deb spaln
+  command 'crun' from deb crun
+  command 'srun' from deb slurm-client
+  command 'runq' from deb exim4-daemon-heavy
+  command 'runq' from deb exim4-daemon-light
+  command 'zrun' from deb moreutils
+  command 'rup' from deb rstat-client
+  command 'zun' from deb python3-zunclient
+Try: apt install <deb name>
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ help                                                                                                                                                                                           
+GNU bash, version 5.2.32(1)-release (x86_64-pc-linux-gnu)
+These shell commands are defined internally.  Type `help' to see this list.
+Type `help name' to find out more about the function `name'.
+Use `info bash' to find out more about the shell in general.
+Use `man -k' or `info' to find out more about commands not in this list.
+
+
+A star (*) next to a name means that the command is disabled.
+
+
+ job_spec [&]                                                                                     history [-c] [-d offset] [n] or history -anrw [filename] or history -ps arg [arg...]
+ (( expression ))                                                                                 if COMMANDS; then COMMANDS; [ elif COMMANDS; then COMMANDS; ]... [ else COMMANDS; ] fi
+ . filename [arguments]                                                                           jobs [-lnprs] [jobspec ...] or jobs -x command [args]
+ :                                                                                                kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+ [ arg... ]                                                                                       let arg [arg ...]
+ [[ expression ]]                                                                                 local [option] name[=value] ...
+ alias [-p] [name[=value] ... ]                                                                   logout [n]
+ bg [job_spec ...]                                                                                mapfile [-d delim] [-n count] [-O origin] [-s count] [-t] [-u fd] [-C callback] [-c quantum] >
+ bind [-lpsvPSVX] [-m keymap] [-f filename] [-q name] [-u name] [-r keyseq] [-x keyseq:shell-co>  popd [-n] [+N | -N]
+ break [n]                                                                                        printf [-v var] format [arguments]
+ builtin [shell-builtin [arg ...]]                                                                pushd [-n] [+N | -N | dir]
+ caller [expr]                                                                                    pwd [-LP]
+ case WORD in [PATTERN [| PATTERN]...) COMMANDS ;;]... esac                                       read [-ers] [-a array] [-d delim] [-i text] [-n nchars] [-N nchars] [-p prompt] [-t timeout] >
+ cd [-L|[-P [-e]] [-@]] [dir]                                                                     readarray [-d delim] [-n count] [-O origin] [-s count] [-t] [-u fd] [-C callback] [-c quantum>
+ command [-pVv] command [arg ...]                                                                 readonly [-aAf] [name[=value] ...] or readonly -p
+ compgen [-abcdefgjksuv] [-o option] [-A action] [-G globpat] [-W wordlist] [-F function] [-C c>  return [n]
+ complete [-abcdefgjksuv] [-pr] [-DEI] [-o option] [-A action] [-G globpat] [-W wordlist] [-F f>  select NAME [in WORDS ... ;] do COMMANDS; done
+ compopt [-o|+o option] [-DEI] [name ...]                                                         set [-abefhkmnptuvxBCEHPT] [-o option-name] [--] [-] [arg ...]
+ continue [n]                                                                                     shift [n]
+ coproc [NAME] command [redirections]                                                             shopt [-pqsu] [-o] [optname ...]
+ declare [-aAfFgiIlnrtux] [name[=value] ...] or declare -p [-aAfFilnrtux] [name ...]              source filename [arguments]
+ dirs [-clpv] [+N] [-N]                                                                           suspend [-f]
+ disown [-h] [-ar] [jobspec ... | pid ...]                                                        test [expr]
+ echo [-neE] [arg ...]                                                                            time [-p] pipeline
+ enable [-a] [-dnps] [-f filename] [name ...]                                                     times
+ eval [arg ...]                                                                                   trap [-lp] [[arg] signal_spec ...]
+ exec [-cl] [-a name] [command [argument ...]] [redirection ...]                                  true
+ exit [n]                                                                                         type [-afptP] name [name ...]
+ export [-fn] [name[=value] ...] or export -p                                                     typeset [-aAfFgiIlnrtux] name[=value] ... or typeset -p [-aAfFilnrtux] [name ...]
+ false                                                                                            ulimit [-SHabcdefiklmnpqrstuvxPRT] [limit]
+ fc [-e ename] [-lnr] [first] [last] or fc -s [pat=rep] [command]                                 umask [-p] [-S] [mode]
+ fg [job_spec]                                                                                    unalias [-a] name [name ...]
+ for NAME [in WORDS ... ] ; do COMMANDS; done                                                     unset [-f] [-v] [-n] [name ...]
+ for (( exp1; exp2; exp3 )); do COMMANDS; done                                                    until COMMANDS; do COMMANDS-2; done
+ function name { COMMANDS ; } or name () { COMMANDS ; }                                           variables - Names and meanings of some shell variables
+ getopts optstring name [arg ...]                                                                 wait [-fn] [-p var] [id ...]
+ hash [-lr] [-p pathname] [-dt] [name ...]                                                        while COMMANDS; do COMMANDS-2; done
+ help [-dms] [pattern ...]                                                                        { COMMANDS ; }
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ ./iobash.sh                                                                                                                                                                                    
+bash: ./iobash.sh: Permission denied
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ sudo ./iobash.sh                                                                                                                                                                               
+[sudo] password for L570102: 
+Sorry, try again.
+[sudo] password for L570102: 
+sudo: ./iobash.sh: command not found
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ sudo ./iobash.sh                                                                                                                                                                               
+[sudo] password for L570102: 
+sudo: ./iobash.sh: command not found
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ sudo apt ./iobash.sh                                                                                                                                                                           
+[sudo] password for L570102: 
+Error: Invalid operation ./iobash.sh
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ ls -l iobash.sh
+-rw-rw-r-- 1 L570102 L570102 13 Feb  4 04:08 iobash.sh
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ chmod u+x iobash.sh                                                                                                                                                                            
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ ls -l iobash.sh
+-rwxrw-r-- 1 L570102 L570102 13 Feb  4 04:08 iobash.sh
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ ./iobash.sh                                                                                                                                                                    
+Salam
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ chmod u-x iobash.sh                                                                                                                                                                           
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ ./iobash.sh
+bash: ./iobash.sh: Permission denied
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ chmod u+x iobash.sh                                                                                                                                                                            
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ ./iobash.sh
+Mehrin Farzana
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ chmod u-x iobash.sh                                                                                                                                                                            
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ history
+    1  sudo -i
+    2  ip a
+    3  apt install ssh
+    4  apt-get install ssh
+    5  systemtcl status ssh
+    6  systemctl status xrdp
+    7  systemctl status ssh.service 
+    8  ll
+    9  pwd
+   10  ls
+   11  cd
+   12  cd documents
+   13  cd document
+   14  ll
+   15  cd documents
+   16  cd Documents
+   17  clear
+   18  cd..
+   19  cd ..
+   20  pwd
+   21  mkdir bdu
+   22  cd bdu
+   23  touch 123
+   24  cd 123
+   25  ll
+   26  mkdir file1
+   27  cd file1
+   28  ls
+   29  pwd
+   30  touch dd.py
+   31  ls
+   32  gedit dd.py 
+   33  sudo apt install gedit 
+   34  ls -l
+   35  chmod +xbdu.py
+   36  ls -l
+   37  nano bdu py
+   38  cat bdu py
+   39  clear
+   40  ifconfig
+   41  nc 127.0.0.1 1337
+   42  nc -nvlp 1337
+   43  help
+   44  eco $shell
+   45  echo $shell
+   46  echo
+   47  echo help
+   48  echo $SHELL
+   49  pwd
+   50  cd..
+   51  cd ..
+   52  pwd
+   53  cd ..
+   54  pwd
+   55  cd ..
+   56  pwd
+   57  cd /home
+   58  cd /L507102
+   59  cd /downloads
+   60  cd /download
+   61  ls
+   62  cd ..
+   63  ls
+   64  cd /home
+   65  ls
+   66  cd /L570102/
+   67  cd /L570102
+   68  cd home/L570102
+   69  cd home/L570102/
+   70  cd /home/L570102
+   71  pwd
+   72  ls
+   73  cd /Downloads
+   74  cd /home/L570102/Downloads
+   75  pwd
+   76  ls
+   77  touch m.txt
+   78  ls
+   79  cat m.txt
+   80  cd /home/L570102/Downloads/m.txt
+   81  vi m.txt
+   82  cat m.tx
+   83  cat m.txt
+   84  cd ..
+   85  pwd
+   86  ls
+   87  cd /home/L570102/Documents
+   88  ls
+   89  mkdir
+   90  mkdir MehrinFarzana
+   91  cd /home/L570102/Documents/MehrinFarzana
+   92  ls
+   93  touch 2101013.txt
+   94  cd /home/L570102/Downloads
+   95  touch iobash.sh
+   96  ls
+   97  cat iobash.sh
+   98  iobash.sh
+   99  run iobash.sh
+  100  help
+  101  ./iobash.sh
+  102  sudo ./iobash.sh
+  103  sudo apt ./iobash.sh
+  104  ls -l iobash.sh
+  105  chmod u+x iobash.sh
+  106  ls -l iobash.sh
+  107  ./iobash.sh
+  108  chmod u-x iobash.sh
+  109  ./iobash.sh
+  110  chmod u+x iobash.sh
+  111  ./iobash.sh
+  112  chmod u-x iobash.sh
+  113  history
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ ^C                                                                                                                                                                                             
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ pwd                                                                                                                                                                                            
+/home/L570102/Downloads
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ touch addition.sh                                                                                                                                                                              
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ gedit addition,sh                                                                                                                                                                              
+Command 'gedit' not found, but can be installed with:
+apt install gedit
+Please ask your administrator.
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ nano addition.sh                                                                                                                                                                               
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ ls -l addition.sh                                                                                                                                                                              
+-rw-rw-r-- 1 L570102 L570102 93 Feb  4 04:32 addition.sh
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ chmod u+x addition.sh                                                                                                                                                                          
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ ls -l addition.sh
+-rwxrw-r-- 1 L570102 L570102 93 Feb  4 04:32 addition.sh
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ cat additon.sh                                                                                                                                                                                 
+cat: additon.sh: No such file or directory
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ cat addition.sh                                                                                                                                                                                
+echo 'enter 1st number'
+read a
+echo 'enter 2nd number'
+read b
+sum=$(($a+$b))
+echo 'sum=$sum"
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ ./addition.sh                                                                                                                                                                                  
+enter 1st number
+3
+enter 2nd number
+4
+./addition.sh: line 6: unexpected EOF while looking for matching `''
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$                                                                                                                                                                                                
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ nano addition.sh                                                                                                                                                                               
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ ./addition.sh                                                                                                                                                                               
+enter 1st number
+2
+enter 2nd number
+4
+sum=$sum
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ nano addition.sh                                                                                                                                                                               
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ ./addition.sh                                                                                                                                                                               
+enter 1st number
+2
+enter 2nd number
+4
+sum=6
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$ cat addition.sh                                                                                                                                                                                
+echo 'enter 1st number'
+read a
+echo 'enter 2nd number'
+read b
+sum=$(($a+$b))
+echo 'sum='$sum
+
+
+┌──(L570102㉿CSLAB)-[~/Downloads]
+└─$
